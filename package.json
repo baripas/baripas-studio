@@ -1,0 +1,7 @@
+{
+  "name": "baripas-studio",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "npx vercel --prod --yes"
+  }
+}
