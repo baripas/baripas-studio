@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap ve Veri Silme - Kelime Zinciri</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #F2F7F2;
+            color: #1A1A1A;
+            line-height: 1.8;
+            padding: 0 24px;
+        }
+        .container { max-width: 700px; margin: 0 auto; padding: 48px 0; }
+        h1 { color: #006941; font-size: 32px; margin-bottom: 8px; }
+        .date { color: #666; font-size: 14px; margin-bottom: 32px; }
+        h2 { color: #006941; font-size: 20px; margin-top: 32px; margin-bottom: 12px; }
+        p { margin-bottom: 16px; color: #333; }
+        ul { margin: 12px 0 16px 24px; }
+        li { margin-bottom: 8px; color: #333; }
+        a { color: #006941; }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .btn {
+            display: inline-block;
+            background: #006941;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        .btn:hover { background: #005236; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #ddd; font-size: 14px; color: #666; }
+        .warning {
+            background: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hesap ve Veri Silme</h1>
+        <p class="date">Son güncelleme: 2 Haziran 2026</p>
+
+        <div class="warning">
+            <strong>⚠️ Önemli:</strong> Hesabınızı ve verilerinizi sildiğinizde aşağıdakiler kalıcı olarak kaybolur:
+            <ul>
+                <li>Tüm skorlarınız ve sıralama geçmişiniz</li>
+                <li>Günlük seriniz (streak) ve pasaport ilerlemeniz</li>
+                <li>Satın aldığınız temalar ve rozetler</li>
+                <li>Takma adınız (nickname)</li>
+            </ul>
+            <strong>Bu işlem geri alınamaz.</strong>
+        </div>
+
+        <h2>Nasıl Silinir?</h2>
+
+        <div class="card">
+            <h2 style="margin-top:0;">Seçenek 1: E-posta ile Talep</h2>
+            <p>Bizimle iletişime geçerek hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz.</p>
+            <p><strong>Ne göndermelisiniz:</strong></p>
+            <ul>
+                <li>E-posta konusu: <strong>"Hesap Silme Talebi"</strong></li>
+                <li>Google hesabınızla giriş yaptıysanız: Google e-posta adresiniz</li>
+                <li>Anonim (giriş yapmamış) kullanıcıysanız: Uygulama içi kullanıcı ID'niz (Ayarlar > Hakkında kısmında bulabilirsiniz)</li>
+            </ul>
+            <a href="mailto:contact@baripas.studio?subject=Hesap%20Silme%20Talebi" class="btn">📧 Talep Gönder</a>
+        </div>
+
+        <div class="card">
+            <h2 style="margin-top:0;">Seçenek 2: Uygulama İçinden</h2>
+            <p>Yakında gelecek bir güncelleme ile uygulama içinden doğrudan hesap silebileceksiniz. Şimdilik lütfen e-posta yöntemini kullanın.</p>
+        </div>
+
+        <h2>Silme İşlemi Ne Kadar Sürer?</h2>
+        <p>E-posta talebinizi aldıktan sonra <strong>30 gün içinde</strong> tüm verileriniz silinir. İşlem tamamlandığında size e-posta ile bildirim göndeririz.</p>
+
+        <h2>Hangi Veriler Silinir?</h2>
+        <ul>
+            <li><strong>Supabase:</strong> Skorlar, oyun eventleri, nickname, analitik verileri</li>
+            <li><strong>PostHog:</strong> Anonim analitik verileri (kullanıcı ID üzerinden)</li>
+            <li><strong>Lokal veri:</strong> Uygulamayı kaldırarak telefonunuzdaki tüm yerel verileri silebilirsiniz</li>
+        </ul>
+
+        <h2>Hangi Veriler Silinemez?</h2>
+        <ul>
+            <li><strong>RevenueCat:</strong> Satın alma kayıtları (finansal yükümlülük gereği saklanır, ancak sizinle ilişkilendirilmez)</li>
+            <li><strong>Reklam kayıtları:</strong> AppLovin ve AdMob'un kendi logları (kendi gizlilik politikalarına tabidir)</li>
+        </ul>
+
+        <p>Herhangi bir sorunuz varsa: <a href="mailto:contact@baripas.studio">contact@baripas.studio</a></p>
+
+        <div class="footer">
+            <p>Baripas Studio &copy; 2026</p>
+            <p><a href="https://baripas.github.io/baripas-studio/">Ana Sayfa</a> • <a href="https://baripas.github.io/baripas-studio/privacy-policy">Gizlilik Politikası</a></p>
+        </div>
+    </div>
+</body>
+</html>
